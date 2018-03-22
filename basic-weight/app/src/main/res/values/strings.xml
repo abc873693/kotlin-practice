@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">basic-weight</string>
+    <string name="title_ticket_type">票種:</string>
+    <string name="adult">成人</string>
+    <string name="child">孩童</string>
+    <string name="half">半票</string>
+    <string name="oid_man">敬老</string>
+    <string name="title_ticket_quantity">票數:</string>
+    <string name="one">1張</string>
+    <string name="two">2張</string>
+    <string name="three">3張</string>
+    <string name="four">4張</string>
+    <string name="five">5張</string>
+    <string name="confirm">購票確認</string>
+    <string name="display_zone">《購票狀況顯示區》</string>
+</resources>

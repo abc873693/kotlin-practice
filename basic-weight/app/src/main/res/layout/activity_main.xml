@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raimvititor.basic_weight.MainActivity">
+
+    <TextView
+        android:id="@+id/text_ticket_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_ticket_type"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTicketType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_ticket_type_title"
+        app:layout_constraintStart_toEndOf="@+id/text_ticket_type_title"
+        app:layout_constraintTop_toTopOf="@+id/text_ticket_type_title">
+
+        <RadioButton
+            android:id="@+id/radioAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/child" />
+
+        <RadioButton
+            android:id="@+id/radioChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adult" />
+
+        <RadioButton
+            android:id="@+id/radioOld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oid_man" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_ticket_quantity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_ticket_quantity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_ticket_type_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_ticket_type_title" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTicketQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/text_ticket_quantity_title"
+        app:layout_constraintTop_toTopOf="@+id/text_ticket_quantity_title">
+
+        <RadioButton
+            android:id="@+id/radioOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/one" />
+
+        <RadioButton
+            android:id="@+id/radioTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two" />
+
+        <RadioButton
+            android:id="@+id/radioThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/three" />
+
+        <RadioButton
+            android:id="@+id/radioFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/four" />
+
+        <RadioButton
+            android:id="@+id/radioFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupTicketQuantity" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/display_zone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonConfirm"
+        app:layout_constraintStart_toStartOf="@+id/buttonConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm" />
+
+</android.support.constraint.ConstraintLayout>
