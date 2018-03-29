@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">recycleView</string>
+    <string name="order">訂購餐點</string>
+    <string name="display_zone">* 訂購餐點顯示區：</string>
+    <array name="items">
+        <item>漢堡</item>
+        <item>可樂</item>
+        <item>玉米濃湯</item>
+        <item>雞塊</item>
+        <item>沙拉</item>
+        <item>咖啡</item>
+        <item>蘋果派</item>
+        <item>汽水</item>
+    </array>
+</resources>
