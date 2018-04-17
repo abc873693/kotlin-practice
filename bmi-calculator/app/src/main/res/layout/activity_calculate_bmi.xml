@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculateBMIActivity">
+
+    <TextView
+        android:id="@+id/textNameTitle"
+        style="@style/textViewTitle"
+        android:text="姓名:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        style="@style/editTextContent"
+        android:hint="請輸入姓名"
+        app:layout_constraintBottom_toBottomOf="@+id/textNameTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textNameTitle"
+        app:layout_constraintTop_toTopOf="@+id/textNameTitle" />
+
+    <TextView
+        android:id="@+id/textSexTitle"
+        style="@style/textViewTitle"
+        android:text="性別:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameTitle" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textSexTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSexTitle"
+        app:layout_constraintTop_toTopOf="@+id/textSexTitle">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textHeightTitle"
+        style="@style/textViewTitle"
+        android:text="身高:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSexTitle" />
+
+    <EditText
+        android:id="@+id/editHeight"
+        style="@style/editTextContent"
+        android:hint="請輸入身高(cm)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textHeightTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textHeightTitle"
+        app:layout_constraintTop_toTopOf="@+id/textHeightTitle" />
+
+    <TextView
+        android:id="@+id/textWeightTitle"
+        style="@style/textViewTitle"
+        android:text="體重:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeightTitle" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        style="@style/editTextContent"
+        android:hint="請輸入體重(kg)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textWeightTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textWeightTitle"
+        app:layout_constraintTop_toTopOf="@+id/textWeightTitle" />
+
+    <TextView
+        android:id="@+id/textWaistlineTitle"
+        style="@style/textViewTitle"
+        android:text="腰圍:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWeightTitle" />
+
+    <EditText
+        android:id="@+id/editWaistline"
+        style="@style/editTextContent"
+        android:hint="請輸入腰圍(cm)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textWaistlineTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textWaistlineTitle"
+        app:layout_constraintTop_toTopOf="@+id/textWaistlineTitle" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBackHome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWaistlineTitle" />
+
+    <Button
+        android:id="@+id/buttonBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/back_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/textWaistlineTitle" />
+
+    <TextView
+        android:id="@+id/textResult"
+        style="@style/textViewTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="顯示BMI結果:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+</android.support.constraint.ConstraintLayout>

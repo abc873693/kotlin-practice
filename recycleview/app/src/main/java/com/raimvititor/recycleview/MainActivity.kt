@@ -14,7 +14,7 @@ import java.util.*
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     val items: MutableList<CheckModel> = ArrayList()
-    var textToSpeech: TextToSpeech? = null
+    private var textToSpeech: TextToSpeech? = null
 
     override fun onClick(p0: View?) {
         var text = ""
